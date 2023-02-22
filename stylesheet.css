@@ -1,0 +1,442 @@
+/*sections------------------------------------------------------------------- */
+body {
+ padding: 0;
+ background-color: #FDFD96;
+ font-size: 100%;
+ color: #333;
+ line-height: 1.4;
+ display: block;
+ margin: 8px;
+}
+
+#wrapper {
+  font-family: 'Sono', sans-serif;
+  max-width: 80em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FFF;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+   "banner"
+   "menu"
+   "nav"
+   "table"
+   "main"
+   "aside"
+   "footer";
+}
+
+#wrapper1 {
+  font-family: 'Sono', sans-serif;
+  max-width: 80em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FFF;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+   "banner"
+   "bannerimage"
+   "menu"
+   "nav"
+   "table"
+   "main"
+   "aside"
+   "footer";
+}
+
+.banner {
+    background: lightgray;
+    padding: 0;
+}
+
+.bannerimage
+{
+	color: #000;
+	padding: 0;
+	background-color: lightgray;
+	background-image: url(images/trees.png);
+	background-size: cover;    
+    background-position: center;
+    overflow: hidden;
+}
+
+.menu{
+    background: gray;
+    padding: 0;
+    font-weight: bold;
+    text-decoration-color: black;
+}
+
+aside	{
+    background-color: lightgray;
+    padding: 0;
+}
+
+.post	{
+    margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #CCC;
+}
+
+.tutorial  {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #CCC;
+}
+
+nav	{
+    background-color: lightgray;
+    padding: 0;
+}
+
+.menu li	{
+  list-style-type: none;
+  font-size: 18px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: #000;
+  padding: 5px;
+  margin-right: 4px;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+.menu a:hover {
+  background-color: #FDFD96;
+  color: black;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  display: block; /*display in a vertical column*/
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: .7em 1.25em .7em 1.25em;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+}
+
+.menu a:link { color: black; }
+.menu a:visited { color: black; }
+.menu a:focus { color: black; }
+.menu a:hover { color: black; }
+.menu a:active { color: black; }
+
+/*Tutorial cards------------------------------------------------------------ */
+
+.steps {
+    margin: 2em 0 0 1.25em;
+}
+
+.steps h4, aside h4 {
+    color: darkgray;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+}
+
+.card-content {
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 1.5em 1.5em 0.3em 0;
+    padding: 1em;
+}
+
+.card-content h4 {
+    text-align:center;
+    color: darkgray;
+    margin-top: .5em;
+}
+
+.card-content p {
+    line-height: 1.3;
+    margin: 0;
+}
+
+.media {
+    margin: 0;
+    padding: 0;
+}
+
+.media li {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 35em)
+{
+    .card {width: 50%;}
+}
+
+@media screen and (min-width: 60em)
+{
+    .card {width: 30%;}
+}
+
+/*headings------------------------------------------------------------------- */
+
+h1	{
+ font-size: 3em;
+ line-height: 2em;
+ text-align: center;
+}
+
+h2	{
+ background-color: lightgray;
+ text-align: center;
+}
+
+h3	{
+ font-size: 1.5em;
+ line-height: 1.7em;
+ text-align: center;
+}
+
+h4  {
+ background-color: lightgray;
+ text-align: center;
+}
+
+/*grouping------------------------------------------------------------------- */
+
+table, th, td	{
+   border: 2px solid black;
+}
+
+th {
+    border: 2px solid black;
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(odd) {background-color: #FDFD96;}
+
+/*image----------------------------------------------------------------------- */
+
+img { max-width: 100%;
+}
+
+/*contact form---------------------------------------------------------------*/
+
+label {display: block;}
+input {display: block;}
+
+form {
+	width: 80%;
+	background-color: lightgray;
+	padding: .8em;
+    border-radius: 35px;
+	border: 4px groove gray;
+	margin: 1.2em;
+}
+
+fieldset {
+	border: 1px solid gray;
+	margin-bottom: 1.2em;
+	padding: .6em .6em .6em .6em;
+}
+
+legend {
+	color: gray;
+	background-color: #FFF;
+	padding: .4em;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+	color: black;
+	padding: .4em 0 .4em 0;
+}
+
+em	{
+	font-style: italic;
+	color: darkblue;
+}
+
+input {
+	width: 98%;
+	height: 2em;
+	background-color: #FFF;
+	border: 1px solid gray;
+	font-family: "Courier New", Courier, monospace;
+	padding: .1em;
+}
+
+input[type="radio"] {
+	width: auto;
+	margin-right: 1em;
+	background-color: #FFF;
+	padding: .5em .5em 0 .5em;
+}
+
+input[type="submit"] {
+	color: #000;	
+	background-color: #FFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	line-height: 1.25;
+	text-align: center;
+	width: auto;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+	color: black;
+	background-color:lightgray;
+	border-color:gray
+}
+
+input[type="submit"]:focus {
+	color: black;
+	background-color:lightgray;
+	border-color:gray
+}
+
+/*anchors--------------------------------------------------------------------- */
+
+a:link, a:visited, a:active	{
+	color: dodgerblue;
+}
+
+a {
+	display: block;
+	background-color: #EBEBEB;
+	color: mediumpurple;
+	font-family: 'Sono', sans-serif;
+	font-size: 1.5em;
+	padding: 0;
+	margin: 4px;
+	border-right: 2px solid #999999;
+	border-bottom: 2px solid #999999;
+	border-top-width: 0px;
+	border-left-width: 0px;
+}
+
+a:hover{
+	color: mediumpurple;
+	border: 1px solid black;
+}
+
+a:active{
+	color: mediumpurple;
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+/*grid layout*/
+
+.banner {grid-area: banner;}
+.bannerimage {grid-area: bannerimage;}
+.menu {grid-area: menu;}
+nav {grid-area: nav;}
+table {grid-area: table;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+
+
+@media (min-width: 50em) {
+  #wrapper {
+    grid-template-columns: 3fr 6fr;
+    grid-template-areas: 
+      "banner  banner"
+      "menu  menu"
+      "nav  table"
+      "aside  main"
+      "footer  footer";
+  }
+}
+
+ @media (min-width: 60em) {
+  #wrapper {
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas: 
+      "banner  banner  banner"
+      "menu  menu  menu"
+      "nav  table  aside"
+      "main  main  main"
+      "footer  footer  footer";
+   }
+}
+
+@media (min-width: 50em) {
+  #wrapper1 {
+    grid-template-columns: 3fr 6fr;
+    grid-template-areas: 
+      "bannerimage  bannerimage"
+      "menu  menu"
+      "nav  table"
+      "aside  main"
+      "footer  footer";
+  }
+}
+
+ @media (min-width: 60em) {
+  #wrapper1 {
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas: 
+      "bannerimage  bannerimage  bannerimage"
+      "menu  menu  menu"
+      "nav  table  aside"
+      "nav  main  aside"
+      "footer  footer  footer";
+   }
+}
+
+@media (min-width: 50em)
+{
+ .banner { padding: 0 0 0 3em; }
+
+/* Menu navigation - inline layout for wider screens */	
+    
+ .menu { padding: 1em 0 1em 3em; }  
+ .menu li {
+  display: inline;
+  margin: 0 1em 0 0;
+ }   
+ .menu a {
+  display: inline;
+  padding: 0;
+  border-bottom: 0;
+ }
+}
+
+@media (max-width: 35em) {
+ table {
+  display:none;
+ }
+}
+
+
+footer {grid-area: footer;}
