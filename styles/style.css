@@ -8,6 +8,10 @@
   src: url("../assets/fonts/FreeSans.ttf");
   font-family: "verdana";
   src: url("../assets/fonts/verdana.ttf");
+  font-family: "verdana-bold";
+  src: url("../assets/fonts/verdana-bold.ttf");
+  font-family: "FreeSansBold";
+  src: url("../assets/fonts/FreeSansBold.ttf");
 }
 
 :root {
@@ -21,7 +25,9 @@
   --linear-darker: hsla(0, 0%, 0%, 0.712);
   --black: rgb(12, 12, 12);
   --main-font: "FreeSans";
+  --main-font-bold: "FreeSansBold";
   --text-font: "verdana";
+  --text-font-bold: "verdana-bold";
 }
 
 .header {
@@ -82,7 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--text-font);
+  font-family: var(--main-font-bold);
   font-size: 28px;
 }
 
@@ -142,7 +148,8 @@
   cursor: pointer;
   border-left: 1px solid black;
   transition: all 0.2s ease;
-  font-family: var(--text-font);
+  font-family: var(--main-font-bold);
+  font-size: 18px;
 }
 
 #name-submit:hover {
@@ -267,8 +274,7 @@
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: var(--main-font);
-  font-weight: bold;
+  font-family: var(--main-font-bold);
 }
 
 .resources {
