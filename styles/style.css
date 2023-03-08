@@ -8,10 +8,6 @@
   src: url("/assets/fonts/FreeSans.ttf");
   font-family: "verdana";
   src: url("/assets/fonts/verdana.ttf");
-  font-family: "FreeSansBold";
-  src: url("/assets/fonts/FreeSansBold.ttf");
-  font-family: "verdana-bold";
-  src: url("/assets/fonts/verdana-bold.ttf");
 }
 
 :root {
@@ -25,9 +21,7 @@
   --linear-darker: hsla(0, 0%, 0%, 0.712);
   --black: rgb(12, 12, 12);
   --main-font: "FreeSans";
-  --main-font-bold: "FreeSansBold";
   --text-font: "verdana";
-  --text-font-bold: "verdana-bold";
 }
 
 .header {
@@ -88,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--text-font-bold);
+  font-family: var(--text-font);
   font-size: 28px;
 }
 
@@ -148,7 +142,7 @@
   cursor: pointer;
   border-left: 1px solid black;
   transition: all 0.2s ease;
-  font-family: var(--text-font-bold);
+  font-family: var(--text-font);
 }
 
 #name-submit:hover {
@@ -310,7 +304,7 @@
 }
 
 .resource-2 {
-  background: url(/assets/images/computer-alone.jpg) center center / cover
+  background: url(/assets/images/another-pc.jpg) center center / cover
     no-repeat;
 }
 
