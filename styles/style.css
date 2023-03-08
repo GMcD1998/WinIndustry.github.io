@@ -5,9 +5,9 @@
 
 @font-face {
   font-family: "FreeSans";
-  src: url("/assets/fonts/FreeSans.ttf");
+  src: url("../assets/fonts/FreeSans.ttf");
   font-family: "verdana";
-  src: url("/assets/fonts/verdana.ttf");
+  src: url("../assets/fonts/verdana.ttf");
 }
 
 :root {
@@ -190,17 +190,18 @@
 }
 
 .news-img1 {
-  background: url("assets/images/little-pc-bro.jpg") center center / cover
+  background: url("../assets/images/little-pc-bro.jpg") center center / cover
     no-repeat;
 }
 
 .news-img2 {
-  background: url("assets/images/pc-woman.jpg") center center / cover no-repeat;
+  background: url("../assets/images/pc-woman.jpg") center center / cover
+    no-repeat;
 }
 
 .news-img3 {
-  background: url("assets/images/yikes-dont-clickit.jpg") center center / cover
-    no-repeat;
+  background: url("../assets/images/yikes-dont-clickit.jpg") center center /
+    cover no-repeat;
 }
 
 .news:hover .news-images {
@@ -300,22 +301,23 @@
 }
 
 .resource-1 {
-  background: url("assets/images/rando-guy.jpg") center center / cover no-repeat;
+  background: url("../assets/images/rando-guy.jpg") center center / cover
+    no-repeat;
 }
 
 .resource-2 {
-  background: url("assets/images/another-pc.jpg") center center / cover
+  background: url("../assets/images/another-pc.jpg") center center / cover
     no-repeat;
 }
 
 .resource-3 {
-  background: url("assets/images/another-pc.jpg") center center / cover
+  background: url("../assets/images/another-pc.jpg") center center / cover
     no-repeat;
 }
 
 .resource-4 {
-  background: url("assets/images/facebook-confidential-code.jpg") center center /
-    cover no-repeat;
+  background: url("../assets/images/facebook-confidential-code.jpg") center
+    center / cover no-repeat;
 }
 
 .news-div {
