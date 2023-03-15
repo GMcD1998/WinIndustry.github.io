@@ -5,13 +5,23 @@
 
 @font-face {
   font-family: "FreeSans";
-  src: url("../assets/fonts/FreeSans.ttf");
+  src: url("../assets/fonts/FreeSans.ttf") format("ttf");
+}
+
+@font-face {
   font-family: "verdana";
-  src: url("../assets/fonts/verdana.ttf");
+  src: url("../assets/fonts/verdana.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FreeSans";
+  src: url("../assets/fonts/FreeSansBold.ttf") format("ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "verdana-bold";
-  src: url("../assets/fonts/verdana-bold.ttf");
-  font-family: "FreeSansBold";
-  src: url("../assets/fonts/FreeSansBold.ttf");
+  src: url("../assets/fonts/verdana-bold.ttf") format("ttf");
 }
 
 :root {
@@ -51,7 +61,8 @@
   justify-content: center;
   align-items: center;
   color: black;
-  font-family: var(--main-font-bold);
+  font-family: var(--main-font);
+  font-weight: bold;
   font-size: 34px;
 }
 
@@ -81,7 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .introduction-text {
@@ -106,9 +117,7 @@
   width: 100%;
   height: 100%;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   font-family: var(--main-font);
   font-size: 22px;
 }
@@ -155,7 +164,8 @@
   background-color: var(--fuschia);
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: var(--main-font-bold);
+  font-family: var(--main-font);
+  font-weight: bold;
   font-size: 18px;
   color: white;
 }
@@ -376,7 +386,8 @@
 }
 
 .quiz-text {
-  font-family: var(--main-font-bold);
+  font-family: var(--main-font);
+  font-weight: bold;
   font-size: 36px;
   margin-bottom: 20px;
 }
