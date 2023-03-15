@@ -15,10 +15,11 @@
 }
 
 :root {
-  --void: #0e0b16;
-  --fuschia: #a239ca;
+  --void: white;
+  --fuschia: #ff6363;
+  --hover: #d15151;
   --jewel: #4717f6;
-  --stark: #e7dfdd;
+  --stark: black;
   --dark: rgb(36, 36, 36);
   --darker: rgb(93, 95, 96);
   --linear-dark: hsla(0, 0%, 0%, 0.445);
@@ -36,12 +37,12 @@
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  background-color: var(--void);
+  background-color: white;
   color: white;
   position: sticky;
   top: 0;
   font-family: var(--main-font);
-  font-size: 20px;
+  font-size: 22px;
   z-index: 99;
 }
 
@@ -49,6 +50,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-family: var(--main-font-bold);
+  font-size: 34px;
 }
 
 .navbar {
@@ -73,17 +77,18 @@
 
 .landing-page {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 120px;
 }
 
 .introduction-text {
   background-color: rgb(1, 1, 66);
   width: 100%;
   height: 100%;
-  background: url("../assets/images/codes.jpg") center center / cover no-repeat;
+  background: url("../assets/images/hello.svg") center right / cover no-repeat;
   color: white;
   display: flex;
   justify-content: center;
@@ -97,7 +102,7 @@
 }
 
 .enter-name-details {
-  background-color: var(--void);
+  background-color: transparent;
   width: 100%;
   height: 100%;
   color: white;
@@ -117,6 +122,7 @@
 .name-input label {
   padding-bottom: 20px;
   align-self: center;
+  color: black;
 }
 
 .name-input input {
@@ -126,6 +132,8 @@
   width: 100%;
   padding: 10px 0 10px 0;
   border-radius: 3px;
+  text-align: center;
+  color: white;
 }
 
 .enter-details {
@@ -144,16 +152,16 @@
   width: 24vw;
   border: none;
   justify-self: flex-end;
-  background-color: var(--stark);
+  background-color: var(--fuschia);
   cursor: pointer;
-  border-left: 1px solid black;
   transition: all 0.2s ease;
   font-family: var(--main-font-bold);
   font-size: 18px;
+  color: white;
 }
 
 #name-submit:hover {
-  background-color: var(--fuschia);
+  background-color: var(--hover);
 }
 
 .news-grid {
@@ -230,7 +238,7 @@
 .news-headline a {
   text-decoration: none;
   width: 90%;
-  color: var(--stark);
+  color: white;
   display: block !important;
   position: relative;
   padding: 0.2em 0;
@@ -254,52 +262,66 @@
   transform-origin: center;
 }
 
-.news-headline a:hover::after,
-.news-headline a:focus::after {
+.news-headline:hover a::after,
+.news-headline:focus a::after {
   transform: scale(1);
 }
 
 .resource-links-container {
-  height: 55vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--stark);
+  background-color: white;
+}
+
+.resource-links h1 {
+  font-family: var(--main-font);
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.resource-links i {
+  color: #ff6363;
 }
 
 .resource-links {
-  width: 65rem;
+  width: 75rem;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: var(--main-font-bold);
 }
 
 .resources {
   display: flex;
   justify-content: space-around;
-  height: 40vh;
+  height: 60vh;
   padding-top: 2rem;
+  font-family: var(--main-font);
+  font-size: 30px;
 }
 
 .resource-container {
-  width: 14rem;
+  width: 17rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .resource {
   width: 100%;
-  height: 90%;
+  height: 80%;
   border-top-left-radius: 8px;
   border-bottom-right-radius: 8px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .resource-text {
-  height: 20%;
+  height: 15%;
 }
 
 .resource:hover {
@@ -326,10 +348,44 @@
     center / cover no-repeat;
 }
 
-.news-div {
+.news-div-container {
   width: 100%;
-  height: 40vh;
-  background-color: red;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.news-div {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 75rem;
+}
+
+.left-side-quiz {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-text {
+  font-family: var(--main-font-bold);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.right-side-quiz {
+  width: 50%;
+  height: 100%;
+  background: url("../assets/images/quizimg.svg") center center / cover
+    no-repeat;
 }
 
 .quiz-div {
@@ -391,9 +447,9 @@ footer {
   background-color: black;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1220px) {
   .resource-links {
-    width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
@@ -406,10 +462,22 @@ footer {
   }
 
   .resource {
-    height: 30vh;
+    height: 80%;
   }
 
   .resource-links-container {
-    height: 80vh;
+    height: 120vh;
+  }
+
+  .resource-container {
+    width: 17rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .resource-links h1 {
+    padding-left: 15px;
   }
 }
