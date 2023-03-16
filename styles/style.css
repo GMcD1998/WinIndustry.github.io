@@ -13,17 +13,6 @@
   src: url("../assets/fonts/verdana.ttf") format("ttf");
 }
 
-@font-face {
-  font-family: "FreeSans";
-  src: url("../assets/fonts/FreeSansBold.ttf") format("ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "verdana-bold";
-  src: url("../assets/fonts/verdana-bold.ttf") format("ttf");
-}
-
 :root {
   --void: white;
   --fuschia: #ff6363;
@@ -86,13 +75,30 @@
   color: var(--fuschia);
 }
 
+.collapse-li {
+  position: relative;
+}
+
+.collapse-div {
+  font-size: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+
+}
+
 .landing-page {
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 180px;
 }
 
 .introduction-text {
@@ -114,7 +120,7 @@
 
 .enter-name-details {
   background-color: transparent;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: white;
 
@@ -123,9 +129,11 @@
 }
 
 .name-input {
+  font-size: 28px;
   display: flex;
   flex-direction: column;
   width: 24vw;
+  color: black;
 }
 
 .name-input label {
@@ -154,7 +162,7 @@
   height: 100%;
 }
 
-#name-submit {
+.submit-button {
   margin-top: 20px;
   border-radius: 3px;
   height: 35px;
@@ -170,7 +178,7 @@
   color: white;
 }
 
-#name-submit:hover {
+.submit-button:hover {
   background-color: var(--hover);
 }
 
@@ -328,6 +336,15 @@
   border-bottom-right-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 80px 100px rgba(255, 255, 255, 0.568);
+  position: relative;
+}
+
+.resource i {
+  position: absolute;
+  left: 110px;
+  top: -25px;
+  font-size: 52px;
 }
 
 .resource-text {
@@ -377,7 +394,7 @@
 }
 
 .left-side-quiz {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -393,7 +410,7 @@
 }
 
 .right-side-quiz {
-  width: 50%;
+  width: 60%;
   height: 100%;
   background: url("../assets/images/quizimg.svg") center center / cover
     no-repeat;

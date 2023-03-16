@@ -20,11 +20,18 @@
         <li>
           <a href="index.html">Home</a>
         </li>
-        <li>
-          <a href="resources.html">Resources</a>
+        <li class="collapse-li">
+          <a href="resources.html" id="resources-link"
+            >Resources <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="collapse-div">
+            <li>Password Security</li>
+            <li>Data Security</li>
+            <li>Dark Patterns</li>
+          </ul>
         </li>
         <li>
-          <a href="/pages/quiz.html">Quiz</a>
+          <a href="./pages/quiz.html">Quiz</a>
         </li>
         <li>
           <a href="about.html">About</a>
@@ -39,9 +46,9 @@
         <div class="enter-details">
           <div class="name-input">
             <label>Hello, what is your name ?</label>
-            <input type="text" />
+            <input type="text" id="name-value" />
           </div>
-          <button id="name-submit">Submit</button>
+          <button class="submit-button" id="name-submit">Submit</button>
         </div>
       </div>
     </div>
@@ -71,7 +78,7 @@
       <div class="news-div">
         <div class="left-side-quiz">
           <div class="quiz-text">Try out our quiz here</div>
-          <button id="name-submit">Take Quiz!</button>
+          <button class="submit-button">Take Quiz!</button>
         </div>
         <div class="right-side-quiz">
           <div class="quiz-image"></div>
@@ -83,16 +90,22 @@
         <h1><i class="fa-solid fa-swatchbook"></i> Discover our resources</h1>
         <div class="resources">
           <div class="resource-container">
-            <div class="resource-text">Hello guy</div>
-            <div class="resource-1 resource"></div>
+            <div class="resource-text">Password Security</div>
+            <div class="resource-1 resource">
+              <i class="fas fa-key"></i>
+            </div>
           </div>
           <div class="resource-container">
-            <div class="resource-text">you dont need the laptop</div>
-            <div class="resource-2 resource"></div>
+            <div class="resource-text">Data Security</div>
+            <div class="resource-2 resource">
+              <i class="fas fa-database"></i>
+            </div>
           </div>
           <div class="resource-container">
-            <div class="resource-text">just buy a pc bro</div>
-            <div class="resource-3 resource"></div>
+            <div class="resource-text">Dark Patterns</div>
+            <div class="resource-3 resource">
+              <i class="fas fa-sitemap"></i>
+            </div>
           </div>
           <div class="resource-container">
             <div class="resource-text">ooh whats in the private folder</div>
