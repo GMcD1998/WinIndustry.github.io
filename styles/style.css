@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--fuschia);
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 34px;
@@ -80,16 +80,30 @@
 }
 
 .collapse-div {
+  width: 250px;
   font-size: 20px;
-  width: 100%;
   position: absolute;
-  bottom: -100px;
+  bottom: -150px;
   left: 0px;
   display: flex;
   flex-direction: column;
   height: 0px;
   overflow: hidden;
+  transition: all 0.2s ease;
+}
 
+.collapse-div li {
+  padding: 5px 0 5px 10px;
+  background-color: white;
+}
+
+.collapse-div li a {
+  color: black !important;
+}
+
+.collapse-div li:hover {
+  color: black;
+  background-color: var(--fuschia);
 }
 
 .landing-page {

@@ -54,16 +54,8 @@ function takeUserInfo() {
   }
 }
 
-nameSubmitButton.addEventListener("click", takeUserInfo);
+if (nameSubmitButton) {
+  nameSubmitButton.addEventListener("click", takeUserInfo);
+}
 
 export { refreshHelloDiv };
-/*
-function userInfoTaken() {
-  if (storageAvailable("localStorage") === true) {
-    if (localStorage.getItem("userName") === null) {
-      let localUser = JSON.stringify(user);
-      localStorage.setItem("userInfo", localUser);
-    }
-  }
-}
-*/

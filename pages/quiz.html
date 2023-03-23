@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/reset.css" />
-    <script type="module" src="index.js" defer></script>
+    <script type="module" src="../index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a85f7ecfe8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Placeholder</title>
   </head>
   <body>
     <div class="header">
-      <div class="logo">PlaceholderLogo</div>
+      <div class="logo">CyberKids</div>
       <nav class="navbar">
         <li>
           <a href="../index.html">Home</a>
         </li>
-        <li>
-          <a href="resources.html">Resources</a>
+        <li class="collapse-li">
+          <a href="resources.html" id="resources-link"
+            >Resources <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="collapse-div">
+            <li><a href="">Password Security</a></li>
+            <li><a href="">Data Security</a></li>
+            <li><a href="">Dark Patterns</a></li>
+            <li><a href="">Safe Browsing Practices</a></li>
+          </ul>
         </li>
         <li>
-          <a href="quiz.html">Quiz</a>
+          <a href="./pages/quiz.html">Quiz</a>
         </li>
         <li>
           <a href="about.html">About</a>
@@ -28,21 +40,21 @@
       </nav>
     </div>
     <div class="quiz-div">
-        <div class="quiz-container">
-          <div class="question-indicator">
-            <div>Question 1/3</div>
-          </div>
-          <div class="question">
-            <div>What are blablabla</div>
-          </div>
-          <div class="answers">
-            <li class="answer">Answer 1</li>
-            <li class="answer">Answer 2</li>
-            <li class="answer">Answer 3</li>
-            <li class="answer">Answer 4</li>
-          </div>
+      <div class="quiz-container">
+        <div class="question-indicator">
+          <div>Question 1/3</div>
+        </div>
+        <div class="question">
+          <div>What are blablabla</div>
+        </div>
+        <div class="answers">
+          <li class="answer">Answer 1</li>
+          <li class="answer">Answer 2</li>
+          <li class="answer">Answer 3</li>
+          <li class="answer">Answer 4</li>
         </div>
       </div>
+    </div>
     <footer></footer>
   </body>
 </html>
