@@ -109,11 +109,11 @@
 
 .landing-page {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 150px;
 }
 
 .introduction-text {
