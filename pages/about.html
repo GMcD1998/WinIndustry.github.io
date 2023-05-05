@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/articles.css" />
+    <link rel="stylesheet" href="../styles/passwordSecurity.css" />
+    <script type="module" src="../index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a85f7ecfe8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../functions/func/passwordSecurity.js"></script>
+    <title>Placeholder</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">CyberKids</div>
+      <nav class="navbar">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="collapse-li">
+          <a href="resources.html" id="resources-link"
+            >Resources <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="collapse-div">
+            <li><a href="">Password Security</a></li>
+            <li><a href="Data_Security.html">Data Security</a></li>
+            <li><a href="Dark_Patterns.html">Dark Patterns</a></li>
+            <li><a href="Safe_Browsing_Practices.html">Safe Browsing Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./quiz.html">Quiz</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </nav>
+    </div>
+    <div>   <!-- HTML for password validator -->
+      <div
+      class="search-wrapper cf">
+      <div class="div_container">
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter your password"
+        />
+        <i class="fas fa-eye" id="togglePasswordEye"></i>
+        <button id="checkPasswordBtn" >Validate</button>
+        <button id="clearPasswordBtn">
+          Clear
+        </button>
+      </div>
+    </div>
+    <p class="centered" id="validationMessage"></p> <!-- Password validation message -->
+    <!-- html for time to crack input field -->
+    <div class="search-wrapper2 cf">
+      <!-- <label for="password">Password:</label> -->
+      <div class="div_container2">
+        <input type="password" id="passwordTTC" placeholder="Type your password here"/>
+      </div>
+    </div>
+    <p class="centered" id="timeToCrack"></p> <!-- paragraph with the Time to Crack output message -->
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="left-text-column">
+          <section>
+            <h1>
+              Password Security and how to protect yourself.
+            </h1>
+            <p>
+            Passwords, we use them everyday. Whether it's the password to your smartphone, your emails, or even the password to a safe in your house, passwords are used all the time. So, how can we be sure these passwords will protect us from people stealing our information? As you have seen, when creating new accounts with companies, they will set out requirements for creating a password. This is to ensure you have the best protection against any password attacks. The requirements are usually along the lines of: make sure you include a capital letter, number, or special character, and make sure the password is over a certain length. Common practice is to make sure:
+            </p>
+            <ol>
+            <li>Passwords include a capital letter, a number, AND a special character</li>
+            <li>Your password is over 8 characters in length</li>
+            <li>You don’t use the same password for everything (otherwise you leave yourself vulnerable if someone figures out your password)</li>
+            <li>You follow security instructions and change your password(s) if you suspect someone knows it</li>
+            <li>Passwords are not written down in one space, where they could be easily accessed by anyone (i.e. notes page on your phone)</li>
+            </ol>
+            <p>
+            Another tool that many companies provide is two-factor authentication. This means you not only enter your password, but also have to provide another means of proof that the account you are accessing is your own. This is usually done by typing in a code that is sent to your email address/phone number to ensure that it is not a third-party trying to access your account. This means that even if your password is cracked, the account will still be inaccessible by anyone except you. 
+            </p>
+          </section>
+        </div>
+        <div class="right-articles-column">
+          <div class="articles-title">Articles</div>
+          <div class="article">
+            <div class="article-picture" id="first-article"></div>
+            <a class="article-name"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              distinctio quia amet?</a
+            >
+          </div>
+          <div class="article">
+            <div class="article-picture" id="first-article"></div>
+            <a class="article-name"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              distinctio quia amet?</a
+            >
+          </div>
+          <div class="article">
+            <div class="article-picture" id="first-article"></div>
+            <a class="article-name"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              distinctio quia amet?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
