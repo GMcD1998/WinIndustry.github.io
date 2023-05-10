@@ -28,7 +28,7 @@ function initiated() {
 
 function isValidPassword(password) {
   console.log(password)
-  const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&>])[A-Za-z\d@$!%*?&>{}[\]:;"'<>,.?/\\|~`\-=_+()^]+$/;
+  const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&>])[A-Za-z\d@$!%*?&>{}[\]:;"'<>,.?/\\|~`\-=_+()^]{8,}$/;
   return regex.test(password);
 }
 
