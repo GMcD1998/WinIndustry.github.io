@@ -7,6 +7,7 @@ let user = {};
 (function () {
   if (storageAvailable("localStorage") === true) {
     let storedUser = JSON.parse(localStorage.getItem("storageUser"));
+    console.log(storedUser);
     if (storedUser !== null) {
       user = storedUser;
       const enterDetailsDiv = document.querySelector(".enter-details");

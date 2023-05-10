@@ -1,0 +1,26 @@
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  margin-top: 0.25rem;
+  background-color: rgb(255, 173, 0);
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-color: rgb(255, 173, 0);
+}
+
+.btn.correct {
+  background-color: rgb(48, 183, 0);
+  color: black;
+}
+
+.btn.wrong {
+  background-color: red;
+  color: white;
+}
