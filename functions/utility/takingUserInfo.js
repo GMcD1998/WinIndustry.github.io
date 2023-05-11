@@ -43,7 +43,7 @@ function refreshHelloDiv(userName) {
 }
 
 function saveNewUser() {
-  let newUser = userNameFactory(nameValue.value, 0, "Beginner");
+  let newUser = userNameFactory(nameValue.value, 0, "Novice");
   saveToLocalStorage(newUser);
   refreshHelloDiv(newUser.name);
 }
@@ -58,4 +58,4 @@ if (nameSubmitButton) {
   nameSubmitButton.addEventListener("click", takeUserInfo);
 }
 
-export { refreshHelloDiv };
+export { refreshHelloDiv, saveToLocalStorage };

@@ -56,10 +56,6 @@
   font-size: 34px;
 }
 
-.menuicon {
-  display: none;
-}
-
 .navbar {
   display: flex;
   text-decoration: none;
@@ -508,6 +504,11 @@ footer {
   background-color: black;
 }
 
+.menu-display {
+  display: none;
+}
+
+
 @media only screen and (max-width: 1220px) {
   .resource-links {
     width: 100%;
@@ -667,8 +668,12 @@ footer {
     left: -65px;
   }
 
+  .menu-display{
+    display: flex;
+  }
+
   .menuicon {
-    display: block;
+    display: flex;
     font-size: 34px;
     position: relative;
     cursor: pointer;
