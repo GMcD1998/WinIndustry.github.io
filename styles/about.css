@@ -9,6 +9,13 @@
     src: url("../assets/fonts/verdana.ttf") format("ttf");
   }
 
+  .container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-gap: 1vw;
+    width: 80rem;
+  }
+
   .text-centered{
     margin-left: 5em;
     margin-right: 5em;
@@ -37,6 +44,8 @@ font-size: 20px;
 .text-centered h4{
 font-size: 15px;
 }
+
+
 .form1{
 border: 15px;
 border-color: black;
