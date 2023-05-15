@@ -48,6 +48,11 @@ font-size: 28px;
 font-size: 26px;
 }
 
+.text-centered img{
+    flex-wrap: wrap;
+    max-width: fit-content;
+}
+
 .text-Centered p{
     font-size:26px;
 }
