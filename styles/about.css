@@ -41,16 +41,16 @@ text-decoration: underline;
 }
 
 .text-Centered h3{
-font-size: 28px;
-}
-
-.text-Centered h4{
 font-size: 26px;
 }
 
+.text-Centered h4{
+font-size: 20px;
+}
+
 .text-centered figure{
-    flex-wrap: wrap;
-    width: 50%;
+    width: 80px;
+    
 }
 
 .text-Centered p{
