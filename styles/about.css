@@ -50,7 +50,7 @@ font-size: 26px;
 
 .text-centered img{
     flex-wrap: wrap;
-    max-width: fit-content;
+    max-width: 90%;
 }
 
 .text-Centered p{
@@ -61,7 +61,5 @@ font-size: 26px;
 .form1{
 gird-column: 2/3;
 margin: 1.5em;
-border: 15px;
-border-color: black;
-
+border: 15px solid black;
 }
