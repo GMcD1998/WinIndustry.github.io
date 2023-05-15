@@ -48,9 +48,8 @@ font-size: 26px;
 font-size: 20px;
 }
 
-.text-centered figure{
-    transform: scale(-50%);
-    
+.text-centered img{
+    transform: scale(-50%); 
 }
 
 .text-Centered p{
