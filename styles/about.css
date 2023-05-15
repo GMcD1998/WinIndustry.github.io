@@ -52,6 +52,7 @@ font-size: 26px;
 
 
 .form1{
+gird-column: 2/3;
 border: 15px;
 border-color: black;
 
