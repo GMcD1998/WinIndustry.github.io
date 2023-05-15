@@ -50,7 +50,7 @@ font-size: 26px;
 
 .text-centered img{
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 10%;
 }
 
 .text-Centered p{
@@ -62,4 +62,14 @@ font-size: 26px;
 gird-column: 2/3;
 margin: 1.5em;
 border: 15px solid black;
+}
+
+#message {
+    width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  resize: none;
 }
