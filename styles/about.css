@@ -18,6 +18,8 @@
   }
 
   .text-centered{
+    magin-top: 5em;
+    magin-bottom: 5em;
     margin-left: 5em;
     margin-right: 5em;
     text-align: center;
