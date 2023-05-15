@@ -49,7 +49,7 @@ font-size: 20px;
 }
 
 .text-centered figure{
-    width: 80px;
+    transform: scale(-50%);
     
 }
 
