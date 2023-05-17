@@ -10,20 +10,17 @@
   }
 
   .container{
-    margin-top: 100px;
     display: grid;
-    grid-template-columns: 0.25fr 1.5fr 0.25fr;
-    grid-gap: 1vw;
-    width: 80rem;
+    margin-top: 5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    
   }
 
   .text-Centered{
-    magin-top: 5em;
-    magin-bottom: 5em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-bottom: 5em;
     text-align: center;
-    grid-column: 2/3;
+    
 }
 
 .text-Centered h1 {
@@ -38,6 +35,8 @@
 .text-Centered h2{
 font-size: 36px;
 text-decoration: underline;
+margin-top: 2em;
+margin-bottom: 0.5em;
 }
 
 .text-Centered h3{
@@ -46,29 +45,50 @@ font-size: 26px;
 
 .text-Centered h4{
 font-size: 20px;
+margin-bottom: 0.75em;
 }
 
 img{
-    scale: 50%; 
+    width: 50%;
+     
 }
 
 .text-Centered p{
     font-size:26px;
 }
 
+.line{
+  margin-top: 1.5em;
+}
 
 .form1{
-gird-column: 2/3;
-margin: 1.5em;
+grid-column: 2/3;
+margin: 1em;
 border: 5px solid black;
+}
+.form1 h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form1 label1{
+  margin-right: 5em;
+}
+
+.form1 label2{
+  margin-right: 3em;
+}
+
+.form1 label3{
+  margin-right: 5.35em;
 }
 
 #message {
-    width: 25%;
-  height: 50px;
-  padding: 12px 20px;
+  width: 75%;
+  height: 75px;
+  padding: 20px 20px;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #fff;
   resize: none;
 }
