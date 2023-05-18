@@ -89,6 +89,7 @@ section {
     line-height: 22px;
     cursor: pointer;
     width: 15rem;
+    text-decoration: none;
 }
 
 .article::after {
