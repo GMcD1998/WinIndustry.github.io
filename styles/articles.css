@@ -78,8 +78,40 @@ section {
 }   
 
 #first-article {
-    background: url("../assets/images/little-pc-bro.jpg") center center / cover
+    background: url("../assets/images/internationalJournal.png") center center / cover
     no-repeat;
+}
+#second-article {
+  background: url("../assets/images/OAUTH2.0.png") center center / cover
+  no-repeat;
+}
+#third-article {
+  background: url("../assets/images/fido.png") center center / cover
+  no-repeat;
+}
+#fourth-article {
+  background: url("../assets/images/ncsc.png") center center / cover
+  no-repeat;
+}
+#fifth-article {
+  background: url("../assets/images/ncsc.png") center center / cover
+  no-repeat;
+}
+#sixth-article {
+  background: url("../assets/images/keeper.png") center center / cover
+  no-repeat;
+}
+#seventh-article {
+  background: url("../assets/images/insider.png") center center / cover
+  no-repeat;
+}
+#eigth-article {
+  background: url("../assets/images/internationalJournalOfComputing.png") center center / cover
+  no-repeat;
+}
+#nineth-article {
+  background: url("../assets/images/verizon.png") center center / cover
+  no-repeat;
 }
 
 .article-name {
