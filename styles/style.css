@@ -4,12 +4,12 @@
 }
 
 @font-face {
-  font-family: "FreeSans";
+  font-family: "FreeSans" ,Arial, Helvetica, sans-serif;
   src: url("../assets/fonts/FreeSans.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "verdana";
+  font-family: "verdana",Arial, Helvetica, sans-serif;
   src: url("../assets/fonts/verdana.ttf") format("ttf");
 }
 
@@ -447,7 +447,7 @@
 
 .quiz-div {
   height: 60vh;
-  background-color: rgb(36, 54, 48);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,6 +475,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .answers {
@@ -505,6 +508,10 @@ footer {
 }
 
 .menu-display {
+  display: none;
+}
+
+.menuicon::before {
   display: none;
 }
 
@@ -677,6 +684,9 @@ footer {
     font-size: 34px;
     position: relative;
     cursor: pointer;
+  }
+  .menuicon::before {
+    display: flex;
   }
 
   .navbar {

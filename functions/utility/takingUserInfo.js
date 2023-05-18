@@ -1,6 +1,5 @@
 import storageAvailable from "./checkForLocalStorage.js";
 import deleteItemsInDiv from "./deleteItemsInDiv.js";
-import user from "../../index.js";
 
 const nameSubmitButton = document.querySelector("#name-submit");
 const nameValue = document.querySelector("#name-value");
@@ -16,9 +15,9 @@ function saveToLocalStorage(userName) {
   }
 }
 
-function typeText(userName, div) {
+function typeText(userName, userLevel, div) {
   let i = 0;
-  let text = `Hello ${userName} thank you for deciding to get informed about safe web experience and computer security. Please read some of our articles about how to protect yourself or even educate yourself with our quiz.`;
+  let text = `Hello ${userName}, ${userLevel} thank you for deciding to get informed about safe web experience and computer security. Please read some of our articles about how to protect yourself or even educate yourself with our quiz.`;
   let speed = 60;
 
   function typeWriter() {
@@ -32,14 +31,14 @@ function typeText(userName, div) {
   typeWriter();
 }
 
-function refreshHelloDiv(userName) {
+function refreshHelloDiv(userName, userLevel) {
   const enterDetailsDiv = document.querySelector(".enter-details");
   deleteItemsInDiv(enterDetailsDiv);
 
   const helloDiv = document.createElement("div");
   helloDiv.classList.add("name-input");
   enterDetailsDiv.appendChild(helloDiv);
-  setTimeout(typeText(userName, helloDiv), 25000);
+  setTimeout(typeText(userName, userLevel, helloDiv), 25000);
 }
 
 function saveNewUser() {

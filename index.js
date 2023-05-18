@@ -14,7 +14,7 @@ let user = {};
       user = storedUser;
       const enterDetailsDiv = document.querySelector(".enter-details");
       if (enterDetailsDiv) {
-        refreshHelloDiv(user.name);
+        refreshHelloDiv(user.name, user.level);
       }
     }
   }

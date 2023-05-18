@@ -122,6 +122,11 @@ section {
     cursor: pointer;
     width: 15rem;
     text-decoration: none;
+    color: black;
+}
+
+p a {
+  color: black;
 }
 
 .article::after {
