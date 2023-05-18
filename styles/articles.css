@@ -137,6 +137,18 @@ section {
   background: url("../assets/images/safeonline2.png") center center / cover
   no-repeat;
 }
+#sixteenth-article {
+  background: url("../assets/images/phishing.png") center center / cover
+  no-repeat;
+}
+#seventeenth-article {
+  background: url("../assets/images/socialmedia.png") center center / cover
+  no-repeat;
+}
+#eighteenth-article {
+  background: url("../assets/images/publicwifi.png") center center / cover
+  no-repeat;
+}
 .article-name {
     font-family: FreeSans;
     font-weight: bold;
