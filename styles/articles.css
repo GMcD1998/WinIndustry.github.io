@@ -125,6 +125,18 @@ section {
   background: url("../assets/images/dataprotection.png") center center / cover
   no-repeat;
 }
+#thirteenth-article {
+  background: url("../assets/images/darkpatterns.png") center center / cover
+  no-repeat;
+}
+#fourteenth-article {
+  background: url("../assets/images/safeonline1.png") center center / cover
+  no-repeat;
+}
+#fifteenth-article {
+  background: url("../assets/images/safeonline2.png") center center / cover
+  no-repeat;
+}
 .article-name {
     font-family: FreeSans;
     font-weight: bold;
