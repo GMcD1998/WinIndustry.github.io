@@ -113,7 +113,18 @@ section {
   background: url("../assets/images/verizon.png") center center / cover
   no-repeat;
 }
-
+#tenth-article {
+  background: url("../assets/images/virus.png") center center / cover
+  no-repeat;
+}
+#eleventh-article {
+  background: url("../assets/images/businessmeeting.png") center center / cover
+  no-repeat;
+}
+#twelth-article {
+  background: url("../assets/images/dataprotection.png") center center / cover
+  no-repeat;
+}
 .article-name {
     font-family: FreeSans;
     font-weight: bold;
