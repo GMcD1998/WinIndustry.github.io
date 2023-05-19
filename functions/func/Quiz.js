@@ -48,7 +48,6 @@ function startQuiz() {
     if (!quizIndexes.includes(x)) {
       quizIndexes.push(x);
     }
-    console.log(i);
   }
   for (const index of quizIndexes) {
     questionList.push(myQuestions[index]);
@@ -67,7 +66,6 @@ function startQuiz() {
       chooseAnswer = "d";
     }
 
-    console.log(chooseAnswer, correctAnswer);
 
     if (chooseAnswer == correctAnswer) {
       answerButtonsElement[i].classList.add("correct");

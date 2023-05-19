@@ -4,7 +4,6 @@ const chevron = document.querySelector(".fas");
 
 resourcesLink.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log();
 
   if (dropdownMenu.style.height === "0px" || dropdownMenu.style.height === "") {
     dropdownMenu.style.height = "120px";
