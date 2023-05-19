@@ -25,7 +25,7 @@
   --linear-dark: hsla(0, 0%, 0%, 0.445);
   --linear-darker: hsla(0, 0%, 0%, 0.712);
   --black: rgb(12, 12, 12);
-  --main-font: "FreeSans";
+  --main-font: "verdana";
   --main-font-bold: "FreeSansBold";
   --text-font: "verdana";
   --text-font-bold: "verdana-bold";
@@ -502,9 +502,24 @@
   cursor: pointer;
 }
 
-footer {
-  height: 30vh;
-  background-color: black;
+.FOOT {
+  height: 20vh;
+  background-color: #ff6363;
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Ftext {
+  color: white;
+  text-align: center;
+  font-family: var(--main-font);
+}
+
+.Ftext a{
+  color: white;
 }
 
 .menu-display {
